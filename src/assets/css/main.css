@@ -1658,3 +1658,9 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.carousel-inner{
+			border-radius: 22px;
+			background: #c4c3c3;
+			box-shadow:  9px 9px 17px #5c5c5c,
+						 -9px -9px 17px #878686;
+			}
