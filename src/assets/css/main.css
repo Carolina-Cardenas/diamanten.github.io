@@ -1,10 +1,10 @@
-@import url(fontawesome-all.min.css);
+ @import url(../css/fontawesome-all.min.css); 
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+
+
 /*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -24,6 +24,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -31,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+
+	
 }
 
 ol, ul {
@@ -53,6 +56,9 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	
+	
+	
 }
 
 mark {
@@ -95,7 +101,9 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #2d3539;
+	
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -107,6 +115,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
+
 		}
 
 /* Type */
@@ -145,6 +154,9 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
+		letter-spacing: 0.2rem;
+	
+	
 	}
 
 	a {
@@ -169,9 +181,9 @@ input, select, textarea {
 	em, i {
 		font-style: italic;
 	}
-
 	p {
 		margin: 0 0 2rem 0;
+		
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -641,12 +653,12 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		
 	}
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(44, 48, 56, 0.5);
+			background-color: rgba(74, 89, 120, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -946,7 +958,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(255, 255, 255, 0.126);
 			}
 
 		table td {
@@ -1138,7 +1150,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(41, 44, 52, 0.5), rgba(34, 38, 47, 0.5)), url("../images/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1157,7 +1169,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../images/bg.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1177,6 +1189,8 @@ input, select, textarea {
 
 		body.is-preload #bg:before {
 			background-color: #000000;
+			background-image: '../images/Centralvägen 1.jpg';
+			
 		}
 
 /* Wrapper */
@@ -1203,11 +1217,13 @@ input, select, textarea {
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
+	
 	}
 
 		#wrapper:before {
 			content: '';
 			display: block;
+		
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -1368,11 +1384,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(255, 255, 255, 0.017);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(255, 255, 255, 0.091);
 					}
 
 		#header nav.use-middle:after {
@@ -1569,6 +1585,7 @@ input, select, textarea {
 				text-indent: 4rem;
 				overflow: hidden;
 				white-space: nowrap;
+				z-index: 1;
 			}
 
 				#main article .close:before {
@@ -1591,7 +1608,7 @@ input, select, textarea {
 				}
 
 				#main article .close:hover:before {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(255, 255, 255, 0.048);
 				}
 
 				#main article .close:active:before {
@@ -1658,9 +1675,19 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.carousel-item img {
+            width: 100%;
+            height: 70vh; /* Ajusta la altura según tus necesidades */
+            object-fit: cover; /* Cubre el contenedor sin deformar las imágenes */
+            margin: 0;
+            padding: 0;
+        }
 		.carousel-inner{
-			border-radius: 22px;
-			background: #c4c3c3;
-			box-shadow:  9px 9px 17px #5c5c5c,
-						 -9px -9px 17px #878686;
+			border-radius: 19px;
+            background: #edebeb;
+            box-shadow: inset 6px 6px 12px #8b8b8b,
+            inset -6px -6px 12px #eae5e5;
+			overflow: hidden;
 			}
+
+		
